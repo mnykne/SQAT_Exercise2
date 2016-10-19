@@ -65,10 +65,10 @@ public class PlanetExplorer {
 				break;
 			case 'f':
 				switch (mExplorerDirection) {
-				case NORTH: ++mExplorerY; break;
-				case EAST:  ++mExplorerX; break;
-				case SOUTH: --mExplorerY; break;
-				case WEST:  --mExplorerX; break;
+				case NORTH: --mExplorerY; break;
+				case EAST:  --mExplorerX; break;
+				case SOUTH: ++mExplorerY; break;
+				case WEST:  ++mExplorerX; break;
 				}
 				break;
 			case 'b':

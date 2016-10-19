@@ -323,3 +323,6 @@ RefactoringAction 1476879663257 TestPlanetExplorer.java RENAME test_landExplorer
 RefactoringAction 1476879666267 TestPlanetExplorer.java RENAME test_landExplorer_Move_Forward_From_7_6_N_To_()=>void test_landExplorer_Move_Forward_From_7_6_N_To_7_7_() METHOD
 RefactoringAction 1476879667277 TestPlanetExplorer.java RENAME test_landExplorer_Move_Forward_From_7_6_N_To_7_7_()=>void test_landExplorer_Move_Forward_From_7_6_N_To_7_7_N() METHOD
 EditAction 1476879700232 TestPlanetExplorer.java 1880 8 25 8
+UnitTestCaseAction 1476879701330 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1476879701330 TestPlanetExplorer.java FAIL
+EditAction 1476879721248 PlanetExplorer.java 3016 5 13 0
