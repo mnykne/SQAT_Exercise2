@@ -55,7 +55,10 @@ public class PlanetExplorer {
 		 * The return string should also contain a list of coordinates of the encountered obstacles. No white spaces.
 		 */
 		
-		if (command == null || command.isEmpty()) {
+		switch (command) {
+		case "r":
+			mExplorerDirection = Direction.EAST;
+		case "":
 			return "(" + mExplorerX + "," + mExplorerY + "," + getDirectionAsString(mExplorerDirection) + ")";
 		}
 	
