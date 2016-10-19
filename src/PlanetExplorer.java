@@ -112,7 +112,7 @@ public class PlanetExplorer {
 				break;
 			}
 			
-			if ( !checkedObstacles[mExplorerY][mExplorerX]) {
+			if (mObstacles[mExplorerY][mExplorerX] && !checkedObstacles[mExplorerY][mExplorerX]) {
 				obstacles += "(" + mExplorerX + "," + mExplorerY + ")";
 			}
 			
