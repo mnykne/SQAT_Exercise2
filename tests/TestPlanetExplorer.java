@@ -113,6 +113,7 @@ public class TestPlanetExplorer {
 		
 		assertEquals("(0,99,N)", result);
 	}
+	
 	@Test
 	public void test_landExplorer_Move_Negative_X_Spawn_Opposite_X() {
 		PlanetExplorer explorer = new PlanetExplorer(100, 100, null);
@@ -121,5 +122,11 @@ public class TestPlanetExplorer {
 		String result = explorer.executeCommand("b");
 		
 		assertEquals("(99,0,E)", result);
+	}
+	
+	@Test
+	public void test_landExplorer_One_PlaceObstacle() {
+		PlanetExplorer explorer = new PlanetExplorer(100, 100,
+				"(1,1)");
 	}
 }

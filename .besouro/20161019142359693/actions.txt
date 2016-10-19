@@ -411,3 +411,12 @@ EditAction 1476880308143 PlanetExplorer.java 3617 5 13 0
 UnitTestCaseAction 1476880309020 TestPlanetExplorer.java OK
 UnitTestSessionAction 1476880309021 TestPlanetExplorer.java OK
 EditAction 1476880313236 PlanetExplorer.java 3625 5 13 0
+RefactoringAction 1476880336820 TestPlanetExplorer.java ADD void place FIELD
+RefactoringAction 1476880342832 TestPlanetExplorer.java RENAME place=>void test_landExpl FIELD
+RefactoringAction 1476880346344 TestPlanetExplorer.java RENAME test_landExpl=>void test_landExplorer_ FIELD
+RefactoringAction 1476880347856 TestPlanetExplorer.java RENAME test_landExplorer_=>void test_landExplorer_Pla FIELD
+RefactoringAction 1476880350367 TestPlanetExplorer.java RENAME test_landExplorer_Pla=>void test_landExplorer_Place FIELD
+RefactoringAction 1476880353880 TestPlanetExplorer.java RENAME test_landExplorer_Place=>void test_landExplorer_PlaceObstack FIELD
+RefactoringAction 1476880364391 TestPlanetExplorer.java RENAME test_landExplorer_PlaceObstack=>void test_landExplorer_PlaceObstacle() METHOD
+RefactoringAction 1476880421923 TestPlanetExplorer.java RENAME test_landExplorer_PlaceObstacle()=>void test_landExplorer_One_PlaceObstacle() METHOD
+EditAction 1476880437028 TestPlanetExplorer.java 3324 14 45 13
