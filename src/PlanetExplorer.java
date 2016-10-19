@@ -65,6 +65,7 @@ public class PlanetExplorer {
 		case "":
 			return "(" + mExplorerX + "," + mExplorerY + "," + getDirectionAsString(mExplorerDirection) + ")";
 		}
+		return "(" + mExplorerX + "," + mExplorerY + "," + getDirectionAsString(mExplorerDirection) + ")";
 	
 		return null;
 	}
