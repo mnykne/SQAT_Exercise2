@@ -4,7 +4,7 @@ import java.util.regex.Pattern;
 
 // Before submitting write your ID and finish time here. Your ID is written on project description sheets.
 // ID: 115
-// Finish time:
+// Finish time: 16:27
 
 public class PlanetExplorer {
 	private enum Direction {
