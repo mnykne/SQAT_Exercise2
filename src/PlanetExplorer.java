@@ -64,11 +64,9 @@ public class PlanetExplorer {
 				mExplorerDirection = Direction.WEST;
 				break;
 			case 'f':
-				--mExplorerY;
 				mExplorerDirection = Direction.NORTH;
 				break;
 			case 'b':
-				++mExplorerY;
 				mExplorerDirection = Direction.SOUTH;
 				break;
 			}
@@ -79,6 +77,12 @@ public class PlanetExplorer {
 	
 	String getSize() {
 		return "(" + mWidth + "," + mHeight + ")";
+	}
+	
+	public void setExplorer(int x, int y, Direction direction) {
+		mExplorerX = x;
+		mExplorerY = y;
+		mExplorerDirection = direction;
 	}
 	
 	private String getDirectionAsString(Direction direction) {

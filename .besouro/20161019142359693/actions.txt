@@ -200,3 +200,16 @@ UnitTestCaseAction 1476878408178 TestPlanetExplorer.java FAIL
 UnitTestSessionAction 1476878408179 TestPlanetExplorer.java FAIL
 EditAction 1476878433269 PlanetExplorer.java 2407 4 10 0
 EditAction 1476878485532 TestPlanetExplorer.java 1575 7 20 7
+RefactoringAction 1476878538532 TestPlanetExplorer.java ADD void test FIELD
+RefactoringAction 1476878541546 TestPlanetExplorer.java RENAME test=>void test_landExplorer FIELD
+RefactoringAction 1476878542558 TestPlanetExplorer.java RENAME test_landExplorer=>void test_landExplorer_ FIELD
+RefactoringAction 1476878546069 TestPlanetExplorer.java RENAME test_landExplorer_=>void test_landExplorer_set FIELD
+RefactoringAction 1476878547080 TestPlanetExplorer.java RENAME test_landExplorer_set=>void test_landExplorer_s FIELD
+RefactoringAction 1476878559094 TestPlanetExplorer.java RENAME test_landExplorer_s=>void test_landExplorer_setInitialPosition_5_5 FIELD
+RefactoringAction 1476878560104 TestPlanetExplorer.java RENAME test_landExplorer_setInitialPosition_5_5=>void test_landExplorer_setInitialPosition_5_5() METHOD
+RefactoringAction 1476878613430 PlanetExplorer.java ADD void setExplorer FIELD
+RefactoringAction 1476878614450 PlanetExplorer.java RENAME setExplorer=>void setExplorer() METHOD
+RefactoringAction 1476878661482 PlanetExplorer.java RENAME setExplorer()=>void setExplorer(int) METHOD
+RefactoringAction 1476878662996 PlanetExplorer.java RENAME setExplorer(int)=>void setExplorer(int, int) METHOD
+RefactoringAction 1476878677011 PlanetExplorer.java RENAME setExplorer(int, int)=>void setExplorer(int, int, Direction) METHOD
+EditAction 1476878683286 PlanetExplorer.java 2508 5 13 0
