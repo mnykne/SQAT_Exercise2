@@ -34,13 +34,13 @@ public class PlanetExplorer {
 		 
 	 */
 		mCells = new Cell[y][x];
-		
-		mHeight = y;
+
 		mWidth = x;
+		mHeight = y;
 		
 		mExplorerX = 0;
 		mExplorerY = 0;
-		mExplorerDirection = NORTH;
+		mExplorerDirection = Direction.NORTH;
 	}
 	
 	public String executeCommand(String command) {
