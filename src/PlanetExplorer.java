@@ -137,7 +137,8 @@ public class PlanetExplorer {
 			}
 		}
 		
-		return "(" + mExplorerX + "," + mExplorerY + "," + getDirectionAsString(mExplorerDirection) + ")";
+		return "(" + mExplorerX + "," + mExplorerY + "," + getDirectionAsString(mExplorerDirection) + ")"
+				+ obstacles;
 	}
 	
 	public void setExplorer(int x, int y, char direction) {
