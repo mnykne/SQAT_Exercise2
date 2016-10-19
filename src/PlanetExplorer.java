@@ -9,6 +9,13 @@ public class PlanetExplorer {
 		// Placeholder
 	}
 	
+	private enum Direction {
+		NORTH,
+		EAST,
+		SOUTH,
+		WEST
+	}
+	
 	Cell[][] mCells;
 
 	int mWidth;
@@ -16,6 +23,7 @@ public class PlanetExplorer {
 	
 	int mExplorerX;
 	int mExplorerY;
+	int mExplorerDirection;
 	
 	public PlanetExplorer(int x, int y, String obstacles){
 	/*	x and y represent the size of the grid.
@@ -48,12 +56,21 @@ public class PlanetExplorer {
 		
 		switch (command) {
 		default:
-			
+			return "(" + mExplorerX + "," + mExplorerY + "," + 
 		}
 		return null;
 	}
 	
 	String getSize() {
 		return "(" + mWidth + "," + mHeight + ")";
+	}
+	
+	private String getDirectionAsString(Direction direction) {
+		switch (direction) {
+		case NORTH: return "N";
+		case EAST:  return "E";
+		case SOUTH: return "S";
+		case WEST:  return "W";
+		}
 	}
 }

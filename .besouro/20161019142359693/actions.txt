@@ -76,3 +76,22 @@ RefactoringAction 1476877449182 PlanetExplorer.java ADD int mExplorer FIELD
 RefactoringAction 1476877454211 PlanetExplorer.java RENAME mExplorer=>int mExplorerX FIELD
 RefactoringAction 1476877459726 PlanetExplorer.java ADD int mExplorerY FIELD
 EditAction 1476877466133 PlanetExplorer.java 1639 3 8 0
+RefactoringAction 1476877478290 PlanetExplorer.java ADD int mStep FIELD
+RefactoringAction 1476877505842 PlanetExplorer.java RENAME mStep=>int mExplorerStep FIELD
+RefactoringAction 1476877531403 PlanetExplorer.java REMOVE mExplorerStep FIELD
+RefactoringAction 1476877561051 PlanetExplorer.java ADD int mExplorerY/2 FIELD
+RefactoringAction 1476877563065 PlanetExplorer.java REMOVE mExplorerY/2 FIELD
+RefactoringAction 1476877570620 PlanetExplorer.java ADD int mDirection FIELD
+RefactoringAction 1476877573636 PlanetExplorer.java RENAME mDirection=>int mExplorerDirection FIELD
+RefactoringAction 1476877590723 PlanetExplorer.java ADD Direction N FIELD
+RefactoringAction 1476877592741 PlanetExplorer.java RENAME N=>Direction NORT FIELD
+RefactoringAction 1476877593758 PlanetExplorer.java RENAME NORT=>Direction NORTH FIELD
+RefactoringAction 1476877596792 PlanetExplorer.java RENAME NORTH=>NORTH EAST FIELD
+RefactoringAction 1476877599824 PlanetExplorer.java ADD Direction NORTH FIELD
+RefactoringAction 1476877603358 PlanetExplorer.java ADD Direction SOUTH FIELD
+RefactoringAction 1476877607893 PlanetExplorer.java ADD Direction WEST FIELD
+RefactoringAction 1476877616911 PlanetExplorer.java ADD void String() METHOD
+RefactoringAction 1476877621932 PlanetExplorer.java RENAME String()=>String getDirection() METHOD
+RefactoringAction 1476877632498 PlanetExplorer.java RENAME getDirection()=>String getDirectionAsString() METHOD
+RefactoringAction 1476877636016 PlanetExplorer.java RENAME getDirectionAsString()=>String getDirectionAsString(Direction) METHOD
+EditAction 1476877677428 PlanetExplorer.java 1975 4 7 0
