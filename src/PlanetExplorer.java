@@ -58,7 +58,13 @@ public class PlanetExplorer {
 		for (char c : command.toCharArray()) {
 			switch (c) {
 			case 'r':
-				mExplorerDirection = Direction.EAST;
+				switch (mExplorerDirection) {
+				case NORTH: mExplorerDirection = Direction.EAST; break;
+				case EAST:  mExplorerDirection = Direction.NORTH; break;
+				case SOUTH: mExplorerDirection = Direction.WEST; break;
+				case WEST:  mExplorerDirection = Direction.NORTH; break;
+				}
+				
 				break;
 			case 'l':
 				mExplorerDirection = Direction.WEST;
