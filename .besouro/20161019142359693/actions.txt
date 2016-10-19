@@ -171,3 +171,10 @@ EditAction 1476878113752 PlanetExplorer.java 2266 4 10 0
 UnitTestCaseAction 1476878115042 TestPlanetExplorer.java FAIL
 UnitTestSessionAction 1476878115042 TestPlanetExplorer.java FAIL
 EditAction 1476878126410 TestPlanetExplorer.java 1350 6 17 6
+UnitTestCaseAction 1476878127407 TestPlanetExplorer.java OK
+UnitTestSessionAction 1476878127408 TestPlanetExplorer.java OK
+RefactoringAction 1476878131653 TestPlanetExplorer.java ADD void test_landExplorer_Move_Forward_Facing_North()/2 METHOD
+RefactoringAction 1476878137186 TestPlanetExplorer.java RENAME test_landExplorer_Move_Forward_Facing_North()/2=>void test_landExplorer_Move_Forward_Facing_Noth() METHOD
+RefactoringAction 1476878140199 TestPlanetExplorer.java RENAME test_landExplorer_Move_Forward_Facing_Noth()=>void test_landExplorer_Move_Forward_Facing_South() METHOD
+RefactoringAction 1476878144711 TestPlanetExplorer.java RENAME test_landExplorer_Move_Forward_Facing_South()=>void test_landExplorer_Move_Backward_Facing_South() METHOD
+EditAction 1476878147409 TestPlanetExplorer.java 1576 7 20 7
