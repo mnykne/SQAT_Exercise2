@@ -39,7 +39,16 @@ public class PlanetExplorer {
 		mCells = new Cell[y][x];
 		
 		if (obstacles != null) {
-			Pattern p = Pattern.compile("(\\d+,\\\d+)+");
+			Pattern p1 = Pattern.compile("(\\d+,\\d+)+");
+			Pattern p2 = Pattern.compile("(\\d+),(\\d+)");
+			Matcher m1 = p1.matcher(obstacles);
+			while (m1.find()) {
+				Matcher m2 = p2.matcher(m1.group(1));
+				int cx = Integer.parseInt(m.group(1));
+				int cy = Integer.parseInt(m.group(2));
+				
+				System.out.println(cx + ":" + cy);
+			}
 		}
 		
 		mWidth = x;
