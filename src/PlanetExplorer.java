@@ -50,9 +50,6 @@ public class PlanetExplorer {
 				if (cx < 0 || cx >= mWidth) {
 					throw new PlanetExplorerException();
 				}
-				if (cy < 0 || cy >= mHeight) {
-					throw new PlanetExplorerException();
-				}
 			}
 		}
 		
