@@ -150,3 +150,15 @@ UnitTestCaseAction 1476878029718 TestPlanetExplorer.java FAIL
 UnitTestSessionAction 1476878029718 TestPlanetExplorer.java FAIL
 EditAction 1476878039931 PlanetExplorer.java 2218 4 10 0
 EditAction 1476878047968 PlanetExplorer.java 2319 4 11 0
+CompilationAction 1476878048075 PlanetExplorer.java
+CompilationAction 1476878050070 PlanetExplorer.java
+CompilationAction 1476878050230 PlanetExplorer.java
+CompilationAction 1476878057265 PlanetExplorer.java
+UnitTestCaseAction 1476878059919 TestPlanetExplorer.java OK
+UnitTestSessionAction 1476878059919 TestPlanetExplorer.java OK
+RefactoringAction 1476878066031 TestPlanetExplorer.java ADD void test_landExplorer_Turn_Left_Facing_West()/2 METHOD
+RefactoringAction 1476878081054 TestPlanetExplorer.java RENAME test_landExplorer_Turn_Left_Facing_West()/2=>void test_landExplorer_Move_Left_Facing_West() METHOD
+RefactoringAction 1476878084067 TestPlanetExplorer.java RENAME test_landExplorer_Move_Left_Facing_West()=>void test_landExplorer_Move_Forward_Facing_West() METHOD
+RefactoringAction 1476878090580 TestPlanetExplorer.java RENAME test_landExplorer_Move_Forward_Facing_West()=>void test_landExplorer_Move_Forward_Facing_() METHOD
+RefactoringAction 1476878092091 TestPlanetExplorer.java RENAME test_landExplorer_Move_Forward_Facing_()=>void test_landExplorer_Move_Forward_Facing_North() METHOD
+EditAction 1476878097161 TestPlanetExplorer.java 1349 6 17 6
