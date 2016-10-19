@@ -95,3 +95,6 @@ RefactoringAction 1476877621932 PlanetExplorer.java RENAME String()=>String getD
 RefactoringAction 1476877632498 PlanetExplorer.java RENAME getDirection()=>String getDirectionAsString() METHOD
 RefactoringAction 1476877636016 PlanetExplorer.java RENAME getDirectionAsString()=>String getDirectionAsString(Direction) METHOD
 EditAction 1476877677428 PlanetExplorer.java 1975 4 7 0
+CompilationAction 1476877677523 PlanetExplorer.java
+CompilationAction 1476877677523 PlanetExplorer.java
+EditAction 1476877687899 PlanetExplorer.java 2001 4 7 0

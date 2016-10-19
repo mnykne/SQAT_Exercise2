@@ -71,6 +71,7 @@ public class PlanetExplorer {
 		case EAST:  return "E";
 		case SOUTH: return "S";
 		case WEST:  return "W";
+		default:    return "?";
 		}
 	}
 }
