@@ -77,8 +77,6 @@ public class PlanetExplorer {
 					throw new PlanetExplorerException();
 				}
 
-				System.out.print(strX);
-				System.out.print(strY);
 				if (strX.isEmpty() || strY.isEmpty()) {
 					throw new PlanetExplorerException();
 				}
