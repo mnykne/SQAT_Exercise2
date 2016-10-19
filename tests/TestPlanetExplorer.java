@@ -9,4 +9,10 @@ public class TestPlanetExplorer {
 		
 		assertEquals("(5,5)", explorer.getSize());
 	}
+	@Test
+	public void test_createPlanet_5x5() {
+		PlanetExplorer explorer = new PlanetExplorer(5, 5, null);
+		
+		assertEquals("(5,5)", explorer.getSize());
+	}
 }
