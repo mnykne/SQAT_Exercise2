@@ -146,7 +146,9 @@ public class TestPlanetExplorer {
 	public void test_landExplorer_Move_To_Obstacle_At_2_2() throws PlanetExplorerException {
 		PlanetExplorer explorer = new PlanetExplorer(100, 100,
 				"(2,2)");
-		
-		
+
+		String result = explorer.executeCommand("ffrff");
+
+		assertEquals("(1,2,E)(2,2)", result);
 	}
 }
