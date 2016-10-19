@@ -33,6 +33,12 @@ public class PlanetExplorer {
 	 */
 		
 		mObstacles = new Boolean[y][x];
+		
+		for (int j = 0; j < y; j++) {
+			for (int i = 0; i < x; i++) {
+				mObstacles[j][i] = false;
+			}
+		}
 
 		mWidth = x;
 		mHeight = y;
@@ -75,6 +81,11 @@ public class PlanetExplorer {
 		
 		String obstacles = "";
 		Boolean[][] checkedObstacles = new Boolean[mHeight][mWidth];
+		for (int j = 0; j < y; j++) {
+			for (int i = 0; i < x; i++) {
+				checkedObstacles[j][i] = false;
+			}
+		}
 		
 		for (char c : command.toCharArray()) {
 			switch (c) {
