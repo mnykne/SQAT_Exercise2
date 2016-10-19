@@ -609,3 +609,12 @@ UnitTestSessionAction 1476882930364 TestPlanetExplorer.java FAIL
 RefactoringAction 1476882949859 PlanetExplorer.java ADD Boolean FIELD
 RefactoringAction 1476882950865 PlanetExplorer.java REMOVE mObstacles/2 FIELD
 EditAction 1476883016835 PlanetExplorer.java 4362 5 16 0
+CompilationAction 1476883017102 PlanetExplorer.java
+CompilationAction 1476883017102 PlanetExplorer.java
+CompilationAction 1476883083303 PlanetExplorer.java
+CompilationAction 1476883083304 PlanetExplorer.java
+UnitTestCaseAction 1476883085006 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1476883085006 TestPlanetExplorer.java FAIL
+UnitTestCaseAction 1476883085459 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1476883085459 TestPlanetExplorer.java FAIL
+EditAction 1476883104322 PlanetExplorer.java 4327 5 16 0

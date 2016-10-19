@@ -73,8 +73,7 @@ public class PlanetExplorer {
 		 * The return string should also contain a list of coordinates of the encountered obstacles. No white spaces.
 		 */
 		
-		ArrayList<String> obstacles = "";
-		
+		String obstacles = "";
 		Boolean[][] checkedObstacles = new Boolean[mHeight][mWidth];
 		
 		for (char c : command.toCharArray()) {
@@ -113,7 +112,7 @@ public class PlanetExplorer {
 				break;
 			}
 			
-			if (checkedObstacles)
+			
 			if (mExplorerY < 0) {
 				mExplorerY = mHeight - 1;
 			}
