@@ -37,6 +37,9 @@ public class PlanetExplorer {
 	 */
 		
 		mCells = new Cell[y][x];
+
+		mWidth = x;
+		mHeight = y;
 		
 		if (obstacles != null) {
 			Pattern p1 = Pattern.compile("(\\d+,\\d+)+");
@@ -55,9 +58,6 @@ public class PlanetExplorer {
 				}
 			}
 		}
-		
-		mWidth = x;
-		mHeight = y;
 		
 		mExplorerX = 0;
 		mExplorerY = 0;
