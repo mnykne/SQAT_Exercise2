@@ -81,8 +81,9 @@ public class PlanetExplorer {
 		
 		String obstacles = "";
 		Boolean[][] checkedObstacles = new Boolean[mHeight][mWidth];
-		for (int j = 0; j < y; j++) {
-			for (int i = 0; i < x; i++) {
+		
+		for (int j = 0; j < mHeight; j++) {
+			for (int i = 0; i < mWidth; i++) {
 				checkedObstacles[j][i] = false;
 			}
 		}
