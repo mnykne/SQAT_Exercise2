@@ -61,16 +61,19 @@ public class PlanetExplorer {
 							break;
 						}
 						if (obstacles.charAt(j) >= '0' && obstacles.charAt(j) <= '9') {
-							strX += obstacles.charAt(j);
+							strY += obstacles.charAt(j);
 						}
 					}
-				
 				
 				} else {
 					throw new PlanetExplorerException();
 				}
 			
 			} else {
+				throw new PlanetExplorerException();
+			}
+			
+			if (strX.isEmpty() || strY.isEmpty()) {
 				throw new PlanetExplorerException();
 			}
 		}
