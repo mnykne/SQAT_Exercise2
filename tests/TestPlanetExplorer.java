@@ -107,6 +107,7 @@ public class TestPlanetExplorer {
 	@Test
 	public void test_landExplorer_Move_Negative_Y_Spawn_Opposite_Y() {
 		PlanetExplorer explorer = new PlanetExplorer(100, 100, null);
+		explorer.setExplorer(0, 0, 'N');
 
 		String result = explorer.executeCommand("b");
 		
@@ -115,7 +116,8 @@ public class TestPlanetExplorer {
 	@Test
 	public void test_landExplorer_Move_Negative_X_Spawn_Opposite_X() {
 		PlanetExplorer explorer = new PlanetExplorer(100, 100, null);
-
+		explorer.setExplorer(0, 0, 'E');
+		
 		String result = explorer.executeCommand("b");
 		
 		assertEquals("(99,0,E)", result);
