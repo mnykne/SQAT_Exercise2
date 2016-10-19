@@ -93,6 +93,9 @@ public class PlanetExplorer {
 			if (mExplorerY < 0) {
 				mExplorerY = mHeight - 1;
 			}
+			if (mExplorerX < 0) {
+				mExplorerX = mWidth - 1;
+			}
 		}
 		
 		return "(" + mExplorerX + "," + mExplorerY + "," + getDirectionAsString(mExplorerDirection) + ")";
