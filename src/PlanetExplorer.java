@@ -90,6 +90,9 @@ public class PlanetExplorer {
 				}
 				break;
 			}
+			if (mExplorerY < 0) {
+				mExplorerY = mHeight - 1;
+			}
 		}
 		
 		return "(" + mExplorerX + "," + mExplorerY + "," + getDirectionAsString(mExplorerDirection) + ")";
