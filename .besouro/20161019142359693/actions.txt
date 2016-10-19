@@ -20,3 +20,9 @@ EditAction 1476876761372 PlanetExplorer.java 1314 3 2 0
 UnitTestCaseAction 1476876767935 TestPlanetExplorer.java FAIL
 UnitTestSessionAction 1476876767936 TestPlanetExplorer.java FAIL
 EditAction 1476876772792 TestPlanetExplorer.java 253 1 2 1
+UnitTestCaseAction 1476876773836 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1476876773836 TestPlanetExplorer.java FAIL
+RefactoringAction 1476876866635 PlanetExplorer.java RENAME ArrayList=>class Cell null
+RefactoringAction 1476876899760 PlanetExplorer.java ADD ArrayList<ArrayList<Cell>> mCells FIELD
+RefactoringAction 1476876909074 PlanetExplorer.java ADD import java.util.ArrayList IMPORT
+EditAction 1476876956634 PlanetExplorer.java 1427 3 2 0
