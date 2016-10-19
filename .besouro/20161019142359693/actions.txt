@@ -274,3 +274,12 @@ EditAction 1476879334305 PlanetExplorer.java 2663 4 10 0
 UnitTestCaseAction 1476879335234 TestPlanetExplorer.java FAIL
 UnitTestSessionAction 1476879335234 TestPlanetExplorer.java FAIL
 EditAction 1476879338447 PlanetExplorer.java 2663 4 10 0
+RefactoringAction 1476879361863 PlanetExplorer.java ADD void setExplorer FIELD
+RefactoringAction 1476879367377 PlanetExplorer.java RENAME setExplorer=>void setExplorer() METHOD
+RefactoringAction 1476879375893 PlanetExplorer.java RENAME setExplorer()=>void setExplorer(int, int, Direction) METHOD
+RefactoringAction 1476879398261 TestPlanetExplorer.java ADD void test FIELD
+RefactoringAction 1476879399272 TestPlanetExplorer.java RENAME test=>void test_ FIELD
+RefactoringAction 1476879402285 TestPlanetExplorer.java RENAME test_=>void test_setExplorer_ FIELD
+RefactoringAction 1476879406295 TestPlanetExplorer.java RENAME test_setExplorer_=>void test_setExplorer_Position_7_7 FIELD
+RefactoringAction 1476879410803 TestPlanetExplorer.java RENAME test_setExplorer_Position_7_7=>void test_setExplorer_Position_7_7_Facing_North() METHOD
+EditAction 1476879448597 PlanetExplorer.java 2782 5 10 0
