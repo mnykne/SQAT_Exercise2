@@ -76,7 +76,17 @@ public class TestPlanetExplorer {
 	}
 
 	@Test
-	public void test_landExplorer_Move_Forward_From_5_8_E_To_4_8_E() {
+	public void test_landExplorer_Move_Forward_From_5_8_E_To_6_8_E() {
+		PlanetExplorer explorer = new PlanetExplorer(100, 100, null);
+		explorer.setExplorer(5, 8, 'E');
+		
+		String result = explorer.executeCommand("f");
+		
+		assertEquals("(4,8,E)", result);
+	}
+	
+	@Test
+	public void test_landExplorer_Move_Backward_From_5_8_E_To_4_8_E() {
 		PlanetExplorer explorer = new PlanetExplorer(100, 100, null);
 		explorer.setExplorer(5, 8, 'E');
 		
