@@ -223,3 +223,6 @@ RefactoringAction 1476878758045 PlanetExplorer.java REMOVE setExplorer(int, int,
 EditAction 1476878760117 PlanetExplorer.java 2371 4 10 0
 EditAction 1476878764311 TestPlanetExplorer.java 1349 6 17 6
 EditAction 1476878781576 TestPlanetExplorer.java 1349 6 17 6
+RefactoringAction 1476878852916 TestPlanetExplorer.java RENAME test_landExplorer_Move_Forward_Facing_North()=>void test_landExplorer_Move_Forward__Facing_North() METHOD
+RefactoringAction 1476878855925 TestPlanetExplorer.java RENAME test_landExplorer_Move_Forward__Facing_North()=>void test_landExplorer_Move_Forward_1_Step_Facing_North() METHOD
+EditAction 1476878859726 TestPlanetExplorer.java 1354 6 17 6

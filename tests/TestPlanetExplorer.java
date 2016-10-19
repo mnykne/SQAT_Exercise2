@@ -47,9 +47,9 @@ public class TestPlanetExplorer {
 	}
 
 	@Test
-	public void test_landExplorer_Move_Forward_Facing_North() {
+	public void test_landExplorer_Move_Forward_1_Step_Facing_North() {
 		PlanetExplorer explorer = new PlanetExplorer(100, 100, null);
-		
+
 		String result = explorer.executeCommand("f");
 		
 		assertEquals("(0,1,N)", result);
