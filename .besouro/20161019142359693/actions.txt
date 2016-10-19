@@ -128,3 +128,6 @@ RefactoringAction 1476877844802 TestPlanetExplorer.java RENAME test_landExplorer
 RefactoringAction 1476877858314 TestPlanetExplorer.java RENAME test_landExplorer_TurnRight_()=>void test_landExplorer_TurnRight_Facing() METHOD
 RefactoringAction 1476877875826 TestPlanetExplorer.java RENAME test_landExplorer_TurnRight_Facing()=>void test_landExplorer_TurnRight_Facing_West() METHOD
 EditAction 1476877897702 TestPlanetExplorer.java 902 4 11 4
+UnitTestCaseAction 1476877898963 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1476877898964 TestPlanetExplorer.java FAIL
+EditAction 1476877906302 TestPlanetExplorer.java 902 4 11 4

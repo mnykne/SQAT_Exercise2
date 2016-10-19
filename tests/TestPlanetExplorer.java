@@ -29,7 +29,7 @@ public class TestPlanetExplorer {
 	}
 	
 	@Test
-	public void test_landExplorer_TurnRight_Facing_West() {
+	public void test_landExplorer_TurnRight_Facing_East() {
 		PlanetExplorer explorer = new PlanetExplorer(100, 100, null);
 		
 		String result = explorer.executeCommand("r");
