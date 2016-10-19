@@ -44,6 +44,7 @@ public class PlanetExplorer {
 			Matcher m1 = p1.matcher(obstacles);
 			while (m1.find()) {
 				Matcher m2 = p2.matcher(m1.group());
+				m2.find();
 				System.out.println(m2.group());
 				int cx = Integer.parseInt(m2.group(0));
 				int cy = Integer.parseInt(m2.group(1));
