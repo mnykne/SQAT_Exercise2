@@ -7,10 +7,6 @@ import java.util.regex.Pattern;
 // Finish time:
 
 public class PlanetExplorer {
-	private class Cell {
-		boolean obstacle = false;
-	}
-	
 	private enum Direction {
 		NORTH,
 		EAST,
@@ -18,7 +14,7 @@ public class PlanetExplorer {
 		WEST
 	}
 	
-	Cell[][] mCells;
+	Boolean[][] mObstacles;
 
 	int mWidth;
 	int mHeight;
@@ -36,7 +32,7 @@ public class PlanetExplorer {
 		 
 	 */
 		
-		mCells = new Cell[y][x];
+		mObstacles = new Boolean[y][x];
 
 		mWidth = x;
 		mHeight = y;
@@ -56,6 +52,7 @@ public class PlanetExplorer {
 				if (cy < 0 || cy >= mHeight) {
 					throw new PlanetExplorerException();
 				}
+				mObstacles[cy][cx] = true;
 			}
 		}
 		

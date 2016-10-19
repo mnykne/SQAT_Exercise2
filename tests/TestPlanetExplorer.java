@@ -141,4 +141,12 @@ public class TestPlanetExplorer {
 		PlanetExplorer explorer = new PlanetExplorer(5, 5,
 				"(1,1)(6,5)");
 	}
+
+	@Test
+	public void test_landExplorer_Move_To_Obstacle_At_2_2() throws PlanetExplorerException {
+		PlanetExplorer explorer = new PlanetExplorer(100, 100,
+				"(2,2)");
+		
+		
+	}
 }
