@@ -54,6 +54,7 @@ public class TestPlanetExplorer {
 		
 		assertEquals("(0,1,N)", result);
 	}
+	
 	@Test
 	public void test_landExplorer_Move_Backward_1_Step_Facing_West() {
 		PlanetExplorer explorer = new PlanetExplorer(100, 100, null);
