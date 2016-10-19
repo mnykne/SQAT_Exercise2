@@ -223,3 +223,13 @@
 1476879899087 test-first 3 164 true
 1476879899088 test-first 3 164 true
 1476879899089 test-first 3 164 true
+1476880014442 test-addition 2 112 true
+1476880014443 test-addition 2 112 true
+1476880014444 test-addition 1 112 true
+1476880014445 test-addition 2 112 true
+1476880014446 test-addition 2 112 true
+1476880014447 test-addition 1 112 true
+1476880014448 test-addition 2 112 true
+1476880014449 test-addition 1 112 true
+1476880014450 test-addition 2 112 true
+1476880014451 test-addition 1 112 true
