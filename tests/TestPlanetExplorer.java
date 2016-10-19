@@ -36,4 +36,13 @@ public class TestPlanetExplorer {
 		
 		assertEquals("(0,0,E)", result);
 	}
+	
+	@Test
+	public void test_landExplorer_Turn_Left_Facing_West() {
+		PlanetExplorer explorer = new PlanetExplorer(100, 100, null);
+		
+		String result = explorer.executeCommand("l");
+		
+		assertEquals("(0,0,W)", result);
+	}
 }
