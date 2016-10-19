@@ -264,3 +264,6 @@ RefactoringAction 1476879276661 TestPlanetExplorer.java RENAME test_landExplorer
 RefactoringAction 1476879279673 TestPlanetExplorer.java RENAME test_landExplorer_Move_Backward_1_Step_1_W()=>void test_landExplorer_Move_Backward_1_Step_W() METHOD
 RefactoringAction 1476879284183 TestPlanetExplorer.java RENAME test_landExplorer_Move_Backward_1_Step_W()=>void test_landExplorer_Move_Backward_1_Step_Facing_West() METHOD
 EditAction 1476879292499 TestPlanetExplorer.java 1583 7 20 7
+UnitTestCaseAction 1476879293395 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1476879293395 TestPlanetExplorer.java FAIL
+EditAction 1476879309301 PlanetExplorer.java 2663 4 10 0
