@@ -52,7 +52,20 @@ public class PlanetExplorer {
 						strX += obstacles.charAt(j);
 					}
 				}
-			
+				if (obstacles.charAt(i) == '(') {
+					++i;
+					for (int j = i; j < obstacles.length(); j++) {
+						if (obstacles.charAt(j) == ')') {
+							i = j;
+							break;
+						}
+						if (obstacles.charAt(j) >= '0' && obstacles.charAt(j) <= '9') {
+							strX += obstacles.charAt(j);
+						}
+					}
+				
+				
+				}
 			
 			} else {
 				throw new PlanetExplorerException();
