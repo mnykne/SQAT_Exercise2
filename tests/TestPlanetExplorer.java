@@ -52,7 +52,7 @@ public class TestPlanetExplorer {
 		
 		String result = explorer.executeCommand("f");
 		
-		assertEquals("(0,0,N)", result);
+		assertEquals("(1,0,N)", result);
 	}
 
 	@Test
@@ -62,14 +62,5 @@ public class TestPlanetExplorer {
 		String result = explorer.executeCommand("b");
 		
 		assertEquals("(0,0,S)", result);
-	}
-	
-	@Test
-	public void test_landExplorer_Sequence_FFRFF_Result_2_2_E() {
-		PlanetExplorer explorer = new PlanetExplorer(100, 100, null);
-		
-		String result = explorer.executeCommand("ffrff");
-		
-		assertEquals("(2,2,E)", result);
 	}
 }
