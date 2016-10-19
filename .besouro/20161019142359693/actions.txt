@@ -219,3 +219,5 @@ RefactoringAction 1476878697705 TestPlanetExplorer.java RENAME test_landExplorer
 RefactoringAction 1476878698757 TestPlanetExplorer.java RENAME test_landExplorer_setExplorer_Position_5_5()=>void test_landExplorer_setExplorer_Position_5_5_() METHOD
 RefactoringAction 1476878707766 TestPlanetExplorer.java RENAME test_landExplorer_setExplorer_Position_5_5_()=>void test_landExplorer_setExplorer_Position_5_5_Direction_South() METHOD
 EditAction 1476878748678 TestPlanetExplorer.java 1575 7 20 7
+RefactoringAction 1476878758045 PlanetExplorer.java REMOVE setExplorer(int, int, Direction) METHOD
+EditAction 1476878760117 PlanetExplorer.java 2371 4 10 0

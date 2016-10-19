@@ -79,12 +79,6 @@ public class PlanetExplorer {
 		return "(" + mWidth + "," + mHeight + ")";
 	}
 	
-	public void setExplorer(int x, int y, Direction direction) {
-		mExplorerX = x;
-		mExplorerY = y;
-		mExplorerDirection = direction;
-	}
-	
 	private String getDirectionAsString(Direction direction) {
 		switch (direction) {
 		case NORTH: return "N";
