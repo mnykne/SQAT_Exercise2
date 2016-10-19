@@ -37,24 +37,13 @@ public class PlanetExplorer {
 	 */
 		
 		mCells = new Cell[y][x];
-
-		for (int i = 0; i < obstacles.length(); i++) {
-			int coordX = -1;
-			int coordY = -1;
-			String strX = "";
-			String strY = "";
-			
-			if (obstacles.charAt(i) == '(') {
-				++i;
-				for (int j = i; j < obstacles.length(); j++) {
-					if (obstacles.charAt(j) == ')') {
-						i = j;
-						break;
-					}
-					if (obstacles.charAt(j) >= '0' && obstacles.charAt(j) <= '9') {
-						strX += obstacles.charAt(j);
-					}
-				}
+		
+		if (obstacles != null) {
+			for (int i = 0; i < obstacles.length(); i++) {
+				int coordX = -1;
+				int coordY = -1;
+				String strX = "";
+				String strY = "";
 				
 				if (obstacles.charAt(i) == '(') {
 					++i;
@@ -64,26 +53,39 @@ public class PlanetExplorer {
 							break;
 						}
 						if (obstacles.charAt(j) >= '0' && obstacles.charAt(j) <= '9') {
-							strY += obstacles.charAt(j);
+							strX += obstacles.charAt(j);
 						}
+					}
+					
+					if (obstacles.charAt(i) == '(') {
+						++i;
+						for (int j = i; j < obstacles.length(); j++) {
+							if (obstacles.charAt(j) == ')') {
+								i = j;
+								break;
+							}
+							if (obstacles.charAt(j) >= '0' && obstacles.charAt(j) <= '9') {
+								strY += obstacles.charAt(j);
+							}
+						}
+					
+					} else {
+						throw new PlanetExplorerException();
 					}
 				
 				} else {
 					throw new PlanetExplorerException();
 				}
-			
-			} else {
-				throw new PlanetExplorerException();
+				
+				if (strX.isEmpty() || strY.isEmpty()) {
+					throw new PlanetExplorerException();
+				}
+	
+				coordX = Integer.parseInt(strX);
+				coordY = Integer.parseInt(strY);
+				
+				mCells[coordY][coordX].obstacle = true;
 			}
-			
-			if (strX.isEmpty() || strY.isEmpty()) {
-				throw new PlanetExplorerException();
-			}
-
-			coordX = Integer.parseInt(strX);
-			coordY = Integer.parseInt(strY);
-			
-			mCells[coordY][coordX].obstacle = true;
 		}
 		
 		mWidth = x;
