@@ -221,3 +221,4 @@ RefactoringAction 1476878707766 TestPlanetExplorer.java RENAME test_landExplorer
 EditAction 1476878748678 TestPlanetExplorer.java 1575 7 20 7
 RefactoringAction 1476878758045 PlanetExplorer.java REMOVE setExplorer(int, int, Direction) METHOD
 EditAction 1476878760117 PlanetExplorer.java 2371 4 10 0
+EditAction 1476878764311 TestPlanetExplorer.java 1349 6 17 6

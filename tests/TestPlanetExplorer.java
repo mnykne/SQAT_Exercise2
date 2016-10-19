@@ -54,13 +54,4 @@ public class TestPlanetExplorer {
 		
 		assertEquals("(1,0,N)", result);
 	}
-
-	@Test
-	public void test_landExplorer_Move_Backward_Facing_South() {
-		PlanetExplorer explorer = new PlanetExplorer(100, 100, null);
-		
-		String result = explorer.executeCommand("b");
-		
-		assertEquals("(0,0,S)", result);
-	}
 }
