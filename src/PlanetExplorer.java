@@ -85,7 +85,7 @@ public class PlanetExplorer {
 		return "(" + mExplorerX + "," + mExplorerY + "," + getDirectionAsString(mExplorerDirection) + ")";
 	}
 	
-	void setExplorer(int x, int y, char direction) {
+	public void setExplorer(int x, int y, char direction) {
 		mExplorerX = x;
 		mExplorerY = y;
 		switch (direction) {
