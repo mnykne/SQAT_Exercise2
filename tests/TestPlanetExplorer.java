@@ -74,7 +74,7 @@ public class TestPlanetExplorer {
 		
 		assertEquals("(7,7,N)", result);
 	}
-	
+
 	@Test
 	public void test_landExplorer_Move_Forward_From_5_8_E_To_4_8_E() {
 		PlanetExplorer explorer = new PlanetExplorer(100, 100, null);
@@ -83,5 +83,14 @@ public class TestPlanetExplorer {
 		String result = explorer.executeCommand("f");
 		
 		assertEquals("(4,8,E)", result);
+	}
+	
+	@Test
+	public void test_landExplorer_Sequence_FFRFF_From_0_0_N_To_2_2_E() {
+		PlanetExplorer explorer = new PlanetExplorer(100, 100, null);
+		
+		String result = explorer.executeCommand("ffrff");
+		
+		assertEquals("(2,2,E)", result);
 	}
 }
