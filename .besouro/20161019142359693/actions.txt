@@ -17,3 +17,6 @@ EditAction 1476876741839 TestPlanetExplorer.java 333 2 3 1
 CompilationAction 1476876741926 TestPlanetExplorer.java
 RefactoringAction 1476876755393 PlanetExplorer.java ADD String getSize() METHOD
 EditAction 1476876761372 PlanetExplorer.java 1314 3 2 0
+UnitTestCaseAction 1476876767935 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1476876767936 TestPlanetExplorer.java FAIL
+EditAction 1476876772792 TestPlanetExplorer.java 253 1 2 1
