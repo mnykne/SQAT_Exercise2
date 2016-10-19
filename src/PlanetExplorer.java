@@ -58,6 +58,8 @@ public class PlanetExplorer {
 		switch (command) {
 		case "r":
 			mExplorerDirection = Direction.EAST;
+		case "l":
+			mExplorerDirection = Direction.WEST;
 		case "":
 			return "(" + mExplorerX + "," + mExplorerY + "," + getDirectionAsString(mExplorerDirection) + ")";
 		}
