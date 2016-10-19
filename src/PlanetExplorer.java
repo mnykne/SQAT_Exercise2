@@ -64,10 +64,14 @@ public class PlanetExplorer {
 				case SOUTH: mExplorerDirection = Direction.WEST; break;
 				case WEST:  mExplorerDirection = Direction.NORTH; break;
 				}
-				
 				break;
 			case 'l':
-				mExplorerDirection = Direction.WEST;
+				switch (mExplorerDirection) {
+				case NORTH: mExplorerDirection = Direction.WEST; break;
+				case EAST:  mExplorerDirection = Direction.NORTH; break;
+				case SOUTH: mExplorerDirection = Direction.EAST; break;
+				case WEST:  mExplorerDirection = Direction.SOUTH; break;
+				}
 				break;
 			case 'f':
 				switch (mExplorerDirection) {
