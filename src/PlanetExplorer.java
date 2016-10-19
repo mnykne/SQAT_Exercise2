@@ -65,6 +65,9 @@ public class PlanetExplorer {
 		case "f":
 			mExplorerDirection = Direction.NORTH;
 			break;
+		case "b":
+			mExplorerDirection = Direction.SOUTH;
+			break;
 		case "":
 		}
 		
