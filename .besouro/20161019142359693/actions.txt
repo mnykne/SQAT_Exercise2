@@ -12,3 +12,4 @@ RefactoringAction 1476876538344 TestPlanetExplorer.java ADD void intialize() MET
 RefactoringAction 1476876551394 TestPlanetExplorer.java REMOVE intialize() METHOD
 RefactoringAction 1476876551395 TestPlanetExplorer.java REMOVE explorer FIELD
 EditAction 1476876576486 TestPlanetExplorer.java 284 2 2 0
+EditAction 1476876660532 PlanetExplorer.java 1274 2 1 0
