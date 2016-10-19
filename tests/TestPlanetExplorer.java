@@ -82,7 +82,7 @@ public class TestPlanetExplorer {
 		
 		String result = explorer.executeCommand("f");
 		
-		assertEquals("(4,8,E)", result);
+		assertEquals("(6,8,E)", result);
 	}
 	
 	@Test
@@ -90,7 +90,7 @@ public class TestPlanetExplorer {
 		PlanetExplorer explorer = new PlanetExplorer(100, 100, null);
 		explorer.setExplorer(5, 8, 'E');
 		
-		String result = explorer.executeCommand("f");
+		String result = explorer.executeCommand("b");
 		
 		assertEquals("(4,8,E)", result);
 	}
