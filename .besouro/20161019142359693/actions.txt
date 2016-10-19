@@ -181,3 +181,13 @@ EditAction 1476878147409 TestPlanetExplorer.java 1576 7 20 7
 UnitTestCaseAction 1476878148935 TestPlanetExplorer.java FAIL
 UnitTestSessionAction 1476878148936 TestPlanetExplorer.java FAIL
 EditAction 1476878156633 PlanetExplorer.java 2329 4 10 0
+UnitTestCaseAction 1476878158084 TestPlanetExplorer.java OK
+UnitTestSessionAction 1476878158084 TestPlanetExplorer.java OK
+RefactoringAction 1476878177244 TestPlanetExplorer.java ADD void test_landExplorer_Move_Backward_Facing_South()/2 METHOD
+RefactoringAction 1476878182802 TestPlanetExplorer.java RENAME test_landExplorer_Move_Backward_Facing_South()/2=>void test_landExplorer_Sequence_() METHOD
+RefactoringAction 1476878184812 TestPlanetExplorer.java RENAME test_landExplorer_Sequence_()=>void test_landExplorer_Sequence_FF() METHOD
+RefactoringAction 1476878187326 TestPlanetExplorer.java RENAME test_landExplorer_Sequence_FF()=>void test_landExplorer_Sequence_FFRFF() METHOD
+RefactoringAction 1476878188839 TestPlanetExplorer.java RENAME test_landExplorer_Sequence_FFRFF()=>void test_landExplorer_Sequence_FFRFF_() METHOD
+RefactoringAction 1476878196851 TestPlanetExplorer.java RENAME test_landExplorer_Sequence_FFRFF_()=>void test_landExplorer_Sequence_FFRFF_2_2_E() METHOD
+RefactoringAction 1476878200362 TestPlanetExplorer.java RENAME test_landExplorer_Sequence_FFRFF_2_2_E()=>void test_landExplorer_Sequence_FFRFF_Result_2_2_E() METHOD
+EditAction 1476878215014 TestPlanetExplorer.java 1807 8 23 8
