@@ -72,7 +72,6 @@ public class PlanetExplorer {
 				}
 				break;
 			case 'b':
-				mExplorerDirection = Direction.SOUTH;
 				break;
 			}
 		}
