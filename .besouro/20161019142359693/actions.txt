@@ -66,3 +66,7 @@ RefactoringAction 1476877187237 TestPlanetExplorer.java RENAME test_landExplorer
 RefactoringAction 1476877211804 TestPlanetExplorer.java RENAME test_landExplorer_Initial_Position_0_0_Facing_North()=>void test_landExplorer_Initial_Position_0_0() METHOD
 RefactoringAction 1476877315098 TestPlanetExplorer.java RENAME test_landExplorer_Initial_Position_0_0()=>void test_landExplorer_Initial_Position_0_0_F() METHOD
 EditAction 1476877405516 TestPlanetExplorer.java 670 3 8 3
+UnitTestCaseAction 1476877406584 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1476877406585 TestPlanetExplorer.java FAIL
+RefactoringAction 1476877416165 TestPlanetExplorer.java RENAME test_landExplorer_Initial_Position_0_0_F()=>void test_landExplorer_Initial_Position_0_0_Facing_North() METHOD
+EditAction 1476877416866 TestPlanetExplorer.java 681 3 8 3
