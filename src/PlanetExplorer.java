@@ -27,7 +27,7 @@ public class PlanetExplorer {
 	int mExplorerY;
 	Direction mExplorerDirection;
 	
-	public PlanetExplorer(int x, int y, String obstacles){
+	public PlanetExplorer(int x, int y, String obstacles) throws PlanetExplorerException{
 	/*	x and y represent the size of the grid.
 	 *  Obstacles is a String formatted as follows: "(obs1_x,obs1_y)(obs2_x,obs2_y)...(obsN_x,obsN_y)" with no white spaces. 
 	 *  
@@ -35,9 +35,12 @@ public class PlanetExplorer {
 		PlanetExplorer explorer = new PlanetExplorer(100,100,"(5,5)(7,8)")  
 		 
 	 */
+		
+		mCells = new Cell[y][x];
+
 		for (int i = 0; i < obstacles.length(); i++) {
-			String coordX = -1;
-			String coordY = -1;
+			int coordX = -1;
+			int coordY = -1;
 			String strX = "";
 			String strY = "";
 			
@@ -76,10 +79,9 @@ public class PlanetExplorer {
 			if (strX.isEmpty() || strY.isEmpty()) {
 				throw new PlanetExplorerException();
 			}
+
 		}
 		
-		mCells = new Cell[y][x];
-
 		mWidth = x;
 		mHeight = y;
 		

@@ -4,14 +4,14 @@ import org.junit.Test;
 
 public class TestPlanetExplorer {
 	@Test
-	public void test_createPlanet_5x5() {
+	public void test_createPlanet_5x5() throws PlanetExplorerException {
 		PlanetExplorer explorer = new PlanetExplorer(5, 5, null);
 		
 		assertEquals("(5,5)", explorer.getSize());
 	}
 	
 	@Test
-	public void test_createPlanet_100x100() {
+	public void test_createPlanet_100x100() throws PlanetExplorerException {
 		PlanetExplorer explorer = new PlanetExplorer(100, 100, null);
 		
 		String size = explorer.getSize();
@@ -20,7 +20,7 @@ public class TestPlanetExplorer {
 	}
 
 	@Test
-	public void test_landExplorer_Initial_Position_0_0_Facing_North() {
+	public void test_landExplorer_Initial_Position_0_0_Facing_North() throws PlanetExplorerException {
 		PlanetExplorer explorer = new PlanetExplorer(100, 100, null);
 		
 		String result = explorer.executeCommand("");
@@ -29,7 +29,7 @@ public class TestPlanetExplorer {
 	}
 	
 	@Test
-	public void test_landExplorer_Turn_Right_Facing_East() {
+	public void test_landExplorer_Turn_Right_Facing_East() throws PlanetExplorerException {
 		PlanetExplorer explorer = new PlanetExplorer(100, 100, null);
 		
 		String result = explorer.executeCommand("r");
@@ -38,7 +38,7 @@ public class TestPlanetExplorer {
 	}
 
 	@Test
-	public void test_landExplorer_Turn_Left_Facing_West() {
+	public void test_landExplorer_Turn_Left_Facing_West() throws PlanetExplorerException {
 		PlanetExplorer explorer = new PlanetExplorer(100, 100, null);
 		
 		String result = explorer.executeCommand("l");
@@ -47,7 +47,7 @@ public class TestPlanetExplorer {
 	}
 
 	@Test
-	public void test_setExplorer_Position_7_7_Facing_North() {
+	public void test_setExplorer_Position_7_7_Facing_North() throws PlanetExplorerException {
 		PlanetExplorer explorer = new PlanetExplorer(100, 100, null);
 		explorer.setExplorer(7, 7, 'S');
 		
@@ -57,7 +57,7 @@ public class TestPlanetExplorer {
 	}
 
 	@Test
-	public void test_landExplorer_Move_Forward_1_Step_Facing_North() {
+	public void test_landExplorer_Move_Forward_1_Step_Facing_North() throws PlanetExplorerException {
 		PlanetExplorer explorer = new PlanetExplorer(100, 100, null);
 
 		String result = explorer.executeCommand("f");
@@ -66,7 +66,7 @@ public class TestPlanetExplorer {
 	}
 
 	@Test
-	public void test_landExplorer_Move_Forward_From_7_6_N_To_7_7_N() {
+	public void test_landExplorer_Move_Forward_From_7_6_N_To_7_7_N() throws PlanetExplorerException {
 		PlanetExplorer explorer = new PlanetExplorer(100, 100, null);
 		explorer.setExplorer(7, 6, 'N');
 		
@@ -76,7 +76,7 @@ public class TestPlanetExplorer {
 	}
 
 	@Test
-	public void test_landExplorer_Move_Forward_From_5_8_E_To_6_8_E() {
+	public void test_landExplorer_Move_Forward_From_5_8_E_To_6_8_E() throws PlanetExplorerException {
 		PlanetExplorer explorer = new PlanetExplorer(100, 100, null);
 		explorer.setExplorer(5, 8, 'E');
 		
@@ -86,7 +86,7 @@ public class TestPlanetExplorer {
 	}
 	
 	@Test
-	public void test_landExplorer_Move_Backward_From_5_8_E_To_4_8_E() {
+	public void test_landExplorer_Move_Backward_From_5_8_E_To_4_8_E() throws PlanetExplorerException {
 		PlanetExplorer explorer = new PlanetExplorer(100, 100, null);
 		explorer.setExplorer(5, 8, 'E');
 		
@@ -96,7 +96,7 @@ public class TestPlanetExplorer {
 	}
 
 	@Test
-	public void test_landExplorer_Sequence_FFRFF_From_0_0_N_To_2_2_E() {
+	public void test_landExplorer_Sequence_FFRFF_From_0_0_N_To_2_2_E() throws PlanetExplorerException {
 		PlanetExplorer explorer = new PlanetExplorer(100, 100, null);
 		
 		String result = explorer.executeCommand("ffrff");
@@ -105,7 +105,7 @@ public class TestPlanetExplorer {
 	}
 
 	@Test
-	public void test_landExplorer_Move_Negative_Y_Spawn_Opposite_Y() {
+	public void test_landExplorer_Move_Negative_Y_Spawn_Opposite_Y() throws PlanetExplorerException {
 		PlanetExplorer explorer = new PlanetExplorer(100, 100, null);
 		explorer.setExplorer(0, 0, 'N');
 
@@ -115,7 +115,7 @@ public class TestPlanetExplorer {
 	}
 	
 	@Test
-	public void test_landExplorer_Move_Negative_X_Spawn_Opposite_X() {
+	public void test_landExplorer_Move_Negative_X_Spawn_Opposite_X() throws PlanetExplorerException {
 		PlanetExplorer explorer = new PlanetExplorer(100, 100, null);
 		explorer.setExplorer(0, 0, 'E');
 		
@@ -125,19 +125,19 @@ public class TestPlanetExplorer {
 	}
 
 	@Test
-	public void test_landExplorer_One_PlaceObstacle() {
+	public void test_landExplorer_One_PlaceObstacle() throws PlanetExplorerException {
 		PlanetExplorer explorer = new PlanetExplorer(100, 100,
 				"(1,1)");
 	}
 	
 	@Test
-	public void test_landExplorer_Two_PlaceObstacles() {
+	public void test_landExplorer_Two_PlaceObstacles() throws PlanetExplorerException {
 		PlanetExplorer explorer = new PlanetExplorer(100, 100,
 				"(1,1)(4,5)");
 	}
 	
 	@Test(expected=PlanetExplorerException.class)
-	public void test_landExplorer_PlaceObstacles_IllegalObstacle() {
+	public void test_landExplorer_PlaceObstacles_IllegalObstacle() throws PlanetExplorerException {
 		PlanetExplorer explorer = new PlanetExplorer(5, 5,
 				"(1,1)(6,5)");
 	}
