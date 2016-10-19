@@ -52,6 +52,7 @@ public class PlanetExplorer {
 						strX += obstacles.charAt(j);
 					}
 				}
+				
 				if (obstacles.charAt(i) == '(') {
 					++i;
 					for (int j = i; j < obstacles.length(); j++) {
@@ -65,6 +66,8 @@ public class PlanetExplorer {
 					}
 				
 				
+				} else {
+					throw new PlanetExplorerException();
 				}
 			
 			} else {
