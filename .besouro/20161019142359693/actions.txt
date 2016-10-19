@@ -283,3 +283,9 @@ RefactoringAction 1476879402285 TestPlanetExplorer.java RENAME test_=>void test_
 RefactoringAction 1476879406295 TestPlanetExplorer.java RENAME test_setExplorer_=>void test_setExplorer_Position_7_7 FIELD
 RefactoringAction 1476879410803 TestPlanetExplorer.java RENAME test_setExplorer_Position_7_7=>void test_setExplorer_Position_7_7_Facing_North() METHOD
 EditAction 1476879448597 PlanetExplorer.java 2782 5 10 0
+CompilationAction 1476879448881 PlanetExplorer.java
+CompilationAction 1476879448881 PlanetExplorer.java
+RefactoringAction 1476879467507 PlanetExplorer.java RENAME setExplorer(int, int, Direction)=>void setExplorer(int, int, char) METHOD
+CompilationAction 1476879533760 PlanetExplorer.java
+CompilationAction 1476879533762 PlanetExplorer.java
+EditAction 1476879568370 TestPlanetExplorer.java 1836 8 24 8

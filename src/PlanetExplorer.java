@@ -9,7 +9,7 @@ public class PlanetExplorer {
 		// Placeholder
 	}
 	
-	public enum Direction {
+	private enum Direction {
 		NORTH,
 		EAST,
 		SOUTH,
@@ -85,10 +85,15 @@ public class PlanetExplorer {
 		return "(" + mExplorerX + "," + mExplorerY + "," + getDirectionAsString(mExplorerDirection) + ")";
 	}
 	
-	void setExplorer(int x, int y, Direction direction) {
+	void setExplorer(int x, int y, char direction) {
 		mExplorerX = x;
 		mExplorerY = y;
-		mExplorerDirection = 
+		switch (direction) {
+		case 'N': mExplorerDirection = Direction.NORTH; break;
+		case 'E':  mExplorerDirection = Direction.EAST; break;
+		case 'S': mExplorerDirection = Direction.SOUTH; break;
+		case 'W':  mExplorerDirection = Direction.WEST; break;
+		}
 	}
 	
 	String getSize() {
