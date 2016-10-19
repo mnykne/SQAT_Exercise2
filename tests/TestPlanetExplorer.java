@@ -47,6 +47,16 @@ public class TestPlanetExplorer {
 	}
 
 	@Test
+	public void test_setExplorer_Position_7_7_Facing_North() {
+		PlanetExplorer explorer = new PlanetExplorer(100, 100, null);
+		explorer.setExplorer(7, 7, 'S');
+		
+		String result = explorer.executeCommand("");
+		
+		assertEquals("(7,7,S)", result);
+	}
+
+	@Test
 	public void test_landExplorer_Move_Forward_1_Step_Facing_North() {
 		PlanetExplorer explorer = new PlanetExplorer(100, 100, null);
 
@@ -56,21 +66,12 @@ public class TestPlanetExplorer {
 	}
 	
 	@Test
-	public void test_landExplorer_Move_Backward_1_Step_Facing_West() {
+	public void test_landExplorer_Move_Forward_From_7_6_N_To_7_7_N() {
 		PlanetExplorer explorer = new PlanetExplorer(100, 100, null);
-
-		String result = explorer.executeCommand("b");
+		explorer.setExplorer(7, 6, 'N');
 		
-		assertEquals("(1,0,W)", result);
-	}
-	
-	@Test
-	public void test_setExplorer_Position_7_7_Facing_North() {
-		PlanetExplorer explorer = new PlanetExplorer(100, 100, null);
-		explorer.setExplorer(7, 7, 'S');
+		String result = explorer.executeCommand("f");
 		
-		String result = explorer.executeCommand("");
-		
-		assertEquals("(7,7,S)", result);
+		assertEquals("(7,6,N)", result);
 	}
 }
