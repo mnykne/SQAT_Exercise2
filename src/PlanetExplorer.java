@@ -112,6 +112,9 @@ public class PlanetExplorer {
 				break;
 			}
 			
+			if (mObstacles[mExplorerY][mExplorerX] && !checkedObstacles[mExplorerY][mExplorerX]) {
+				obstacles += "(" + mExplorerX + "," + mExplorerY + ")";
+			}
 			
 			if (mExplorerY < 0) {
 				mExplorerY = mHeight - 1;
