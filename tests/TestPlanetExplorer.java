@@ -18,7 +18,7 @@ public class TestPlanetExplorer {
 		
 		assertEquals("(100,100)", size);
 	}
-	
+
 	@Test
 	public void test_landExplorer_Initial_Position_0_0_Facing_North() {
 		PlanetExplorer explorer = new PlanetExplorer(100, 100, null);
@@ -26,5 +26,14 @@ public class TestPlanetExplorer {
 		String result = explorer.executeCommand("");
 		
 		assertEquals("(0,0,N)", result);
+	}
+	
+	@Test
+	public void test_landExplorer_TurnRight_Facing_West() {
+		PlanetExplorer explorer = new PlanetExplorer(100, 100, null);
+		
+		String result = explorer.executeCommand("r");
+		
+		assertEquals("(0,0,E)", result);
 	}
 }

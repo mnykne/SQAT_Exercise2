@@ -118,3 +118,13 @@ CompilationAction 1476877799195 PlanetExplorer.java
 UnitTestCaseAction 1476877813652 TestPlanetExplorer.java OK
 UnitTestSessionAction 1476877813653 TestPlanetExplorer.java OK
 EditAction 1476877815503 PlanetExplorer.java 2108 4 10 0
+UnitTestCaseAction 1476877816836 TestPlanetExplorer.java OK
+UnitTestSessionAction 1476877816837 TestPlanetExplorer.java OK
+RefactoringAction 1476877830235 TestPlanetExplorer.java ADD void test_landExplorer_Initial_Position_0_0_Facing_North()/2 METHOD
+RefactoringAction 1476877834258 TestPlanetExplorer.java RENAME test_landExplorer_Initial_Position_0_0_Facing_North()/2=>void test_landExplorer_() METHOD
+RefactoringAction 1476877841780 TestPlanetExplorer.java RENAME test_landExplorer_()=>void test_landExplorer_Turn() METHOD
+RefactoringAction 1476877843791 TestPlanetExplorer.java RENAME test_landExplorer_Turn()=>void test_landExplorer_TurnRight() METHOD
+RefactoringAction 1476877844802 TestPlanetExplorer.java RENAME test_landExplorer_TurnRight()=>void test_landExplorer_TurnRight_() METHOD
+RefactoringAction 1476877858314 TestPlanetExplorer.java RENAME test_landExplorer_TurnRight_()=>void test_landExplorer_TurnRight_Facing() METHOD
+RefactoringAction 1476877875826 TestPlanetExplorer.java RENAME test_landExplorer_TurnRight_Facing()=>void test_landExplorer_TurnRight_Facing_West() METHOD
+EditAction 1476877897702 TestPlanetExplorer.java 902 4 11 4
