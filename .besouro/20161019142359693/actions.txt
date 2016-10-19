@@ -131,3 +131,6 @@ EditAction 1476877897702 TestPlanetExplorer.java 902 4 11 4
 UnitTestCaseAction 1476877898963 TestPlanetExplorer.java FAIL
 UnitTestSessionAction 1476877898964 TestPlanetExplorer.java FAIL
 EditAction 1476877906302 TestPlanetExplorer.java 902 4 11 4
+RefactoringAction 1476877914892 TestPlanetExplorer.java RENAME test_landExplorer_TurnRight_Facing_East()=>void test_landExplorer_TurnRight_FacingEast() METHOD
+RefactoringAction 1476877916405 TestPlanetExplorer.java RENAME test_landExplorer_TurnRight_FacingEast()=>void test_landExplorer_TurnRight_Facing_East() METHOD
+EditAction 1476877918460 TestPlanetExplorer.java 903 4 11 4
