@@ -38,6 +38,9 @@ public class PlanetExplorer {
 		for (int i = 0; i < obstacles.length(); i++) {
 			String strX = "";
 			for (int j = i; j < obstacles.length(); j++) {
+				if (obstacles.charAt(j) == ')') {
+					break;
+				}
 				if (obstacles.charAt(j) >= '0' && obstacles.charAt(j) <= '9') {
 					strX += obstacles.charAt(j);
 				}
