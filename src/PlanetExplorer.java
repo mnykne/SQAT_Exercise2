@@ -42,7 +42,6 @@ public class PlanetExplorer {
 	}
 	
 	String getSize() {
-		
 		return "(" + mWidth + "," + mHeight + ")";
 	}
 }
