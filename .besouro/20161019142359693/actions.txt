@@ -639,3 +639,10 @@ CompilationAction 1476883230009 PlanetExplorer.java
 CompilationAction 1476883234656 PlanetExplorer.java
 CompilationAction 1476883234657 PlanetExplorer.java
 EditAction 1476883236635 PlanetExplorer.java 4713 5 18 0
+UnitTestCaseAction 1476883237751 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1476883237752 TestPlanetExplorer.java FAIL
+UnitTestCaseAction 1476883245486 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1476883245486 TestPlanetExplorer.java FAIL
+UnitTestCaseAction 1476883248266 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1476883248266 TestPlanetExplorer.java FAIL
+EditAction 1476883264997 PlanetExplorer.java 4710 5 18 0
