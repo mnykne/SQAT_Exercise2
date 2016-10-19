@@ -9,7 +9,10 @@ public class PlanetExplorer {
 		// Placeholder
 	}
 	
-	Cell mCells[][];
+	Cell[][] mCells;
+
+	int mWidth;
+	int mHeight;
 	
 	public PlanetExplorer(int x, int y, String obstacles){
 	/*	x and y represent the size of the grid.
@@ -19,7 +22,10 @@ public class PlanetExplorer {
 		PlanetExplorer explorer = new PlanetExplorer(100,100,"(5,5)(7,8)")  
 		 
 	 */
-		mCells = new Array
+		mCells = new Cell[y][x];
+		
+		mHeight = y;
+		mWidth = x;
 	}
 	
 	public String executeCommand(String command){
@@ -33,11 +39,10 @@ public class PlanetExplorer {
 		 * Where pos_x and pos_y are the final coordinates, facing is the current direction the explorer is pointing to (N,S,W,E).
 		 * The return string should also contain a list of coordinates of the encountered obstacles. No white spaces.
 		 */
-		
-		return null;
 	}
 	
 	String getSize() {
-		return null;
+		
+		return "(" + mWidth + "," + mHeight + ")";
 	}
 }
