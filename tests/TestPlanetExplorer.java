@@ -52,6 +52,6 @@ public class TestPlanetExplorer {
 		
 		String result = explorer.executeCommand("f");
 		
-		assertEquals("(1,0,N)", result);
+		assertEquals("(0,1,N)", result);
 	}
 }
