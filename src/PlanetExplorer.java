@@ -70,11 +70,9 @@ public class PlanetExplorer {
 						}
 					
 					} else {
-						throw new PlanetExplorerException();
 					}
 				
 				} else {
-					throw new PlanetExplorerException();
 				}
 
 				if (strX.isEmpty() || strY.isEmpty()) {
