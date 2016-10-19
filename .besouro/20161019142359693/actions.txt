@@ -191,3 +191,6 @@ RefactoringAction 1476878188839 TestPlanetExplorer.java RENAME test_landExplorer
 RefactoringAction 1476878196851 TestPlanetExplorer.java RENAME test_landExplorer_Sequence_FFRFF_()=>void test_landExplorer_Sequence_FFRFF_2_2_E() METHOD
 RefactoringAction 1476878200362 TestPlanetExplorer.java RENAME test_landExplorer_Sequence_FFRFF_2_2_E()=>void test_landExplorer_Sequence_FFRFF_Result_2_2_E() METHOD
 EditAction 1476878215014 TestPlanetExplorer.java 1807 8 23 8
+UnitTestCaseAction 1476878216556 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1476878216556 TestPlanetExplorer.java FAIL
+EditAction 1476878256103 PlanetExplorer.java 2371 4 10 0

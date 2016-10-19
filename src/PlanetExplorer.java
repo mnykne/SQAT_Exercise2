@@ -55,20 +55,21 @@ public class PlanetExplorer {
 		 * The return string should also contain a list of coordinates of the encountered obstacles. No white spaces.
 		 */
 		
-		switch (command) {
-		case "r":
-			mExplorerDirection = Direction.EAST;
-			break;
-		case "l":
-			mExplorerDirection = Direction.WEST;
-			break;
-		case "f":
-			mExplorerDirection = Direction.NORTH;
-			break;
-		case "b":
-			mExplorerDirection = Direction.SOUTH;
-			break;
-		case "":
+		for (char c : command.toCharArray()) {
+			switch (c) {
+			case 'r':
+				mExplorerDirection = Direction.EAST;
+				break;
+			case 'l':
+				mExplorerDirection = Direction.WEST;
+				break;
+			case 'f':
+				mExplorerDirection = Direction.NORTH;
+				break;
+			case 'b':
+				mExplorerDirection = Direction.SOUTH;
+				break;
+			}
 		}
 		
 		return "(" + mExplorerX + "," + mExplorerY + "," + getDirectionAsString(mExplorerDirection) + ")";
