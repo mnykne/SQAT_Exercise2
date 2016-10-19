@@ -43,9 +43,11 @@ public class PlanetExplorer {
 			Pattern p2 = Pattern.compile("(\\d+),(\\d+)");
 			Matcher m1 = p1.matcher(obstacles);
 			while (m1.find()) {
-				Matcher m2 = p2.matcher(m1.group(1));
-				int cx = Integer.parseInt(m.group(1));
-				int cy = Integer.parseInt(m.group(2));
+				Matcher m2 = p2.matcher(m1.group());
+				System.out.println(
+						System.out.println(cx + ":" + cy););
+				int cx = Integer.parseInt(m2.group(1));
+				int cy = Integer.parseInt(m2.group(2));
 				
 				System.out.println(cx + ":" + cy);
 			}
