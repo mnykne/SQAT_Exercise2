@@ -123,10 +123,22 @@ public class TestPlanetExplorer {
 		
 		assertEquals("(99,0,E)", result);
 	}
-	
+
 	@Test
 	public void test_landExplorer_One_PlaceObstacle() {
 		PlanetExplorer explorer = new PlanetExplorer(100, 100,
 				"(1,1)");
+	}
+	
+	@Test
+	public void test_landExplorer_Two_PlaceObstacles() {
+		PlanetExplorer explorer = new PlanetExplorer(100, 100,
+				"(1,1)(4,5)");
+	}
+	
+	@Test(expected=PlanetExplorerException.class)
+	public void test_landExplorer_PlaceObstacles_IllegalObstacle() {
+		PlanetExplorer explorer = new PlanetExplorer(5, 5,
+				"(1,1)(6,5)");
 	}
 }

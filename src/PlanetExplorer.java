@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class PlanetExplorer {
 	private class Cell {
-		// Placeholder
+		boolean obstacle = false;
 	}
 	
 	private enum Direction {
