@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 // Before submitting write your ID and finish time here. Your ID is written on project description sheets.
 // ID: 115
@@ -33,6 +35,15 @@ public class PlanetExplorer {
 		PlanetExplorer explorer = new PlanetExplorer(100,100,"(5,5)(7,8)")  
 		 
 	 */
+		for (int i = 0; i < obstacles.length(); i++) {
+			String strX = "";
+			for (int j = i; j < obstacles.length(); j++) {
+				if (obstacles.charAt(j) >= '0' && obstacles.charAt(j) <= '9') {
+					strX += obstacles.charAt(j);
+				}
+			}
+		}
+		
 		mCells = new Cell[y][x];
 
 		mWidth = x;
