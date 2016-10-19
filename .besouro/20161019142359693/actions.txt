@@ -665,3 +665,11 @@ EditAction 1476883354283 TestPlanetExplorer.java 4418 17 50 14
 UnitTestCaseAction 1476883354897 TestPlanetExplorer.java FAIL
 UnitTestSessionAction 1476883354897 TestPlanetExplorer.java FAIL
 EditAction 1476883382163 TestPlanetExplorer.java 4418 17 50 14
+UnitTestCaseAction 1476883382624 TestPlanetExplorer.java OK
+UnitTestSessionAction 1476883382624 TestPlanetExplorer.java OK
+RefactoringAction 1476883405051 TestPlanetExplorer.java ADD void test_landExplorer_Move_To_Obstacle_At_2_2()/2 METHOD
+RefactoringAction 1476883408058 TestPlanetExplorer.java RENAME test_landExplorer_Move_To_Obstacle_At_2_2()/2=>void test_landExplorer_Move_To_Obstaclse_At_2_2() METHOD
+RefactoringAction 1476883410061 TestPlanetExplorer.java RENAME test_landExplorer_Move_To_Obstaclse_At_2_2()=>void test_landExplorer_Move_To_Obstaclse_At_2_2_An() METHOD
+RefactoringAction 1476883411565 TestPlanetExplorer.java RENAME test_landExplorer_Move_To_Obstaclse_At_2_2_An()=>void test_landExplorer_Move_To_Obstaclse_At_2_2_And_() METHOD
+RefactoringAction 1476883413070 TestPlanetExplorer.java RENAME test_landExplorer_Move_To_Obstaclse_At_2_2_And_()=>void test_landExplorer_Move_To_Obstaclse_At_2_2_And_2_1() METHOD
+EditAction 1476883445080 TestPlanetExplorer.java 4709 18 53 15

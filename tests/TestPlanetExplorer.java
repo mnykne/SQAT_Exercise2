@@ -151,4 +151,14 @@ public class TestPlanetExplorer {
 
 		assertEquals("(3,2,E)(2,2)", result);
 	}
+	
+	@Test
+	public void test_landExplorer_Move_To_Obstaclse_At_2_2_And_2_1() throws PlanetExplorerException {
+		PlanetExplorer explorer = new PlanetExplorer(100, 100,
+				"(2,2)(2,1)");
+
+		String result = explorer.executeCommand("ffrfffrflf");
+
+		assertEquals("(1,1,E)(2,2)(2,1)", result);
+	}
 }
