@@ -28,4 +28,8 @@ public class PlanetExplorer {
 		
 		return null;
 	}
+	
+	String getSize() {
+		return null;
+	}
 }

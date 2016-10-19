@@ -14,3 +14,6 @@ RefactoringAction 1476876551395 TestPlanetExplorer.java REMOVE explorer FIELD
 EditAction 1476876576486 TestPlanetExplorer.java 284 2 2 0
 EditAction 1476876660532 PlanetExplorer.java 1274 2 1 0
 EditAction 1476876741839 TestPlanetExplorer.java 333 2 3 1
+CompilationAction 1476876741926 TestPlanetExplorer.java
+RefactoringAction 1476876755393 PlanetExplorer.java ADD String getSize() METHOD
+EditAction 1476876761372 PlanetExplorer.java 1314 3 2 0
