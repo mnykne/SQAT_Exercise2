@@ -56,7 +56,7 @@ public class PlanetExplorer {
 		
 		switch (command) {
 		default:
-			return "(" + mExplorerX + "," + mExplorerY + "," + 
+			return "(" + mExplorerX + "," + mExplorerY + "," + getDirectionAsString(mExplorerDirection) + ")";
 		}
 		return null;
 	}
