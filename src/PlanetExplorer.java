@@ -47,8 +47,12 @@ public class PlanetExplorer {
 				m2.find();
 				int cx = Integer.parseInt(m2.group(1));
 				int cy = Integer.parseInt(m2.group(2));
-				
-				System.out.println(cx + ":" + cy);
+				if (cx < 0 || cx >= mWidth) {
+					throw new PlanetExplorerException();
+				}
+				if (cy < 0 || cy >= mHeight) {
+					throw new PlanetExplorerException();
+				}
 			}
 		}
 		
