@@ -70,6 +70,7 @@ public class PlanetExplorer {
 						}
 					
 					} else {
+						throw new PlanetExplorerException();
 					}
 				
 				} else {
