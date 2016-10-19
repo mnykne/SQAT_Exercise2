@@ -110,6 +110,6 @@ public class TestPlanetExplorer {
 
 		String result = explorer.executeCommand("b");
 		
-		assertEquals("(00,99,N)", result);
+		assertEquals("(0,99,N)", result);
 	}
 }
