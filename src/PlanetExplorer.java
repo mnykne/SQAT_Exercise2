@@ -80,6 +80,10 @@ public class PlanetExplorer {
 				throw new PlanetExplorerException();
 			}
 
+			coordX = Integer.parseInt(strX);
+			coordY = Integer.parseInt(strY);
+			
+			mCells[coordY][coordX].obstacle = true;
 		}
 		
 		mWidth = x;
