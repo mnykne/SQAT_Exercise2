@@ -61,7 +61,7 @@ public class PlanetExplorer {
 						++i;
 						for (int j = i; j < obstacles.length(); j++) {
 							if (obstacles.charAt(j) == ')') {
-								i = j + 1;
+								i = j;
 								break;
 							}
 							if (obstacles.charAt(j) >= '0' && obstacles.charAt(j) <= '9') {
