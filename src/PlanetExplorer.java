@@ -23,7 +23,7 @@ public class PlanetExplorer {
 	
 	int mExplorerX;
 	int mExplorerY;
-	int mExplorerDirection;
+	Direction mExplorerDirection;
 	
 	public PlanetExplorer(int x, int y, String obstacles){
 	/*	x and y represent the size of the grid.
@@ -40,6 +40,7 @@ public class PlanetExplorer {
 		
 		mExplorerX = 0;
 		mExplorerY = 0;
+		mExplorerDirection = NORTH;
 	}
 	
 	public String executeCommand(String command) {
@@ -54,10 +55,10 @@ public class PlanetExplorer {
 		 * The return string should also contain a list of coordinates of the encountered obstacles. No white spaces.
 		 */
 		
-		switch (command) {
-		default:
+		if (command == null || command.isEmpty()) {
 			return "(" + mExplorerX + "," + mExplorerY + "," + getDirectionAsString(mExplorerDirection) + ")";
 		}
+	
 		return null;
 	}
 	
