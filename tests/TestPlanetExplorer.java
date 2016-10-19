@@ -149,6 +149,6 @@ public class TestPlanetExplorer {
 
 		String result = explorer.executeCommand("ffrfff");
 
-		assertEquals("(1,2,E)(2,2)", result);
+		assertEquals("(3,2,E)(2,2)", result);
 	}
 }
