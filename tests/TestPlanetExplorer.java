@@ -64,7 +64,8 @@ public class TestPlanetExplorer {
 		assertEquals("(1,0,W)", result);
 	}
 	
-	@Test void test_setExplorer_Position_7_7_Facing_North() {
+	@Test
+	public void test_setExplorer_Position_7_7_Facing_North() {
 		PlanetExplorer explorer = new PlanetExplorer(100, 100, null);
 		explorer.setExplorer(7, 7, 'S');
 		
