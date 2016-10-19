@@ -71,6 +71,6 @@ public class TestPlanetExplorer {
 		
 		String result = explorer.executeCommand("");
 		
-		assertEquals("(7,7,N)", result);
+		assertEquals("(7,7,S)", result);
 	}
 }
